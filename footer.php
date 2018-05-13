@@ -8,10 +8,13 @@
 
 function footer($name, $year){
     echo"
+</section>
 <footer>
 <p>
 $name | $year
 </p>
 </footer>
-</body>";
+</section>
+</body>
+";
 }

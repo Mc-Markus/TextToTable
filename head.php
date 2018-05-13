@@ -17,5 +17,11 @@ function head($title, $keywords, $description){
 	<link href="CSS/main.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<section class="content">
+<header>
+        <img src="IMG/TextToTable_40_40.png">
+        <h1>Text to Table</h1>
+    </header>
+<section class="table">
 ';
 }

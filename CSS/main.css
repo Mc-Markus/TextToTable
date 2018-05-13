@@ -3,13 +3,13 @@
 /*--------------------- General ---------------------*/
 html{
     height: 100%;
-    padding:1%;
+    overflow: auto;
 }
 
 body{
     font-size: 0.8em;
     font-family: sans-serif;
-    background: linear-gradient(to bottom, lightgrey, darkgrey);
+    background: linear-gradient(to bottom, lightgrey, darkgrey) no-repeat fixed;
     min-height: 100%;
     margin: 0;
 }
@@ -35,7 +35,6 @@ header{
     padding: 0.3em;
     vertical-align: bottom;
     contain: content;
-    width: 640px;
     margin: 0 auto;
     background-color: dodgerblue;
     border-radius: 0.5em 0.5em 0 0;
@@ -45,7 +44,6 @@ footer{
     padding: 0.3em;
     vertical-align: bottom;
     contain: content;
-    width: 640px;
     margin: 0 auto;
     background-color: #1E90FF;
     border-radius: 0 0 0.5em 0.5em;
@@ -60,6 +58,12 @@ p{
 
 p, input, textarea, button{
     font-size: 1em;
+}
+
+.content{
+    margin: 1% auto;
+    overflow: visible;
+    max-width: 90%;
 }
 
 /*--------------------- Output Table ---------------------*/
@@ -79,6 +83,12 @@ p, input, textarea, button{
     font-size: inherit;
     border-collapse: collapse;
     background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 0.3em;
+    width: 100%;
+}
+.table{
+    overflow: scroll;
 }
 #sortableTable tr:nth-child(2n){
     background-color: lightgrey;
@@ -94,7 +104,6 @@ p, input, textarea, button{
 /*--------------------- Form ---------------------*/
 
 form{
-    width:640px;
     margin: auto;
     background-color: whitesmoke;
     padding: 0.3em;
