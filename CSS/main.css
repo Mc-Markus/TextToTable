@@ -64,7 +64,7 @@ p, input, textarea, button{
     margin: 0 auto;
     overflow: visible;
     max-width: 90%;
-    padding-top: 1%;
+    padding: 1% 0;
 }
 
 /*--------------------- Output Table ---------------------*/
