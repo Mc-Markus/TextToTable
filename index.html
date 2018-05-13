@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text to Table</title>
+    <link href="CSS/main.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="IMG/favicon.ico"/>
+</head>
+<body>
+<script src="SCRIPTS/inputValidation.js"></script>
+
+<header>
+    <img src="IMG/TextToTable_40_40.png">
+    <h1>Text to Table</h1>
+</header>
+
+<form method="post" action="ConvertToTable.php">
+
+
+
+
+        <label for="inputText" class="label">Enter the text you want to convert to a table</label>
+        <textarea id="inputText" type="text" name="inputText" rows="20" cols="60" required onchange="validateInput()">Header1;Header2,aa;33,bb;11,cc;22,</textarea>
+    <table>
+        <tr>
+            <td>
+                <label class="label" for="cellSeparator">Cell Separator</label>
+            </td>
+            <td>
+                <label class="label" for="rowSeparator">Row Separator</label>
+            </td>
+            <td>
+                <label class="label" for="amountOfColumns">Amount of columns</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="text" id="cellSeparator" type="text" maxlength="1" name="cellSeparator" required onchange="validateInput()" value=";">
+            </td>
+            <td>
+                <input class="text" id="rowSeparator" type="text" maxlength="1" name="rowSeparator" required onchange="validateInput()" value=",">
+            </td>
+            <td>
+                <input id="amountOfColumns" type="number" min="2" max="99" name="amountOfColumns" value="2" required onchange="validateInput()">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <!--Home Button-->
+                <a class="button secondary" href="../index.html">Home</a>
+            </td>
+            <td>
+                <input type="submit" value="Convert to Table" class="button primary">
+            </td>
+            <td>
+                <!-- Info Button-->
+                <a class="button secondary" href="https://github.com/Mc-Markus/TextToTable">GitHub</a>
+            </td>
+        </tr>
+    </table>
+
+</form>
+<footer>
+    <p>
+        Mark van den Berg | 2018
+    </p>
+</footer>
+</body>
+</html>

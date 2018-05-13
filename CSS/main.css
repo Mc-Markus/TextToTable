@@ -1,0 +1,186 @@
+
+
+/*--------------------- General ---------------------*/
+html{
+    height: 100%;
+    padding:1%;
+}
+
+body{
+    font-size: 0.8em;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, lightgrey, darkgrey);
+    min-height: 100%;
+    margin: 0;
+}
+
+img{
+    float:left;
+    border-radius: 0.5em;
+    margin: 0.2em;
+}
+
+h1{
+    float: left;
+    clear: right;
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 0px;
+    margin-left: 10px;
+    color: whitesmoke;
+
+}
+
+header{
+    padding: 0.3em;
+    vertical-align: bottom;
+    contain: content;
+    width: 640px;
+    margin: 0 auto;
+    background-color: dodgerblue;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+footer{
+    padding: 0.3em;
+    vertical-align: bottom;
+    contain: content;
+    width: 640px;
+    margin: 0 auto;
+    background-color: #1E90FF;
+    border-radius: 0 0 0.5em 0.5em;
+    color: whitesmoke;
+}
+
+p{
+    text-align: center;
+    margin: 0;
+}
+
+
+p, input, textarea, button{
+    font-size: 1em;
+}
+
+/*--------------------- Output Table ---------------------*/
+
+#sortableTable th, #sortableTable td{
+    padding: 0.2em;
+    font-size: inherit;
+    font-family: inherit;
+}
+#sortableTable th{
+    font-weight: normal;
+    background-color: darkgrey;
+    color:whitesmoke;
+    text-align: left;
+}
+#sortableTable{
+    font-size: inherit;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+}
+#sortableTable tr:nth-child(2n){
+    background-color: lightgrey;
+}
+#sortableTable tr:hover{
+    background-color: dodgerblue;
+    color:whitesmoke;
+}
+#sortableTable th:hover{
+    background-color: dodgerblue;
+}
+
+/*--------------------- Form ---------------------*/
+
+form{
+    width:640px;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 0.3em;
+}
+
+form table{
+    width: 100%;
+    border-color: darkgrey;
+}
+
+form textarea{
+    width: 98%;
+    padding: 0.2em;
+    border-width: 0.2em;
+    margin: 0.5em auto;
+    border-style: solid;
+}
+
+textarea{
+    display: block;
+    resize: none;
+    margin: 100px 0;
+}
+
+form td{
+    width: 33%;
+}
+
+.text, #amountOfColumns{
+    width:95%;
+    display: block;
+    background-color: whitesmoke;
+    border-width: 0.2em;
+    border-style: solid;
+    border-color: lightgrey;
+    border-radius: 0.5em;
+    padding: 0.2em;
+}
+
+.label{
+    width: 95%;
+    display: block;
+    background-color: whitesmoke;
+    color: black;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: whitesmoke;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    text-align: left;
+    font-weight: bold;
+}
+
+textarea{
+    border-radius: 0.5em;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 0.2em;
+    background-color: whitesmoke;
+}
+
+.button{
+    display: block;
+
+    /*background-color: dodgerblue;*/
+    border-style: solid;
+    border-width: 0.2em;
+    border-radius: 0.5em;
+    border-color: dodgerblue;
+    padding: 0.2em;
+    /*background: linear-gradient(to bottom, white 0, dodgerblue 15%, dodgerblue 85%, black 100%);*/
+
+}
+
+.primary{
+    background: linear-gradient(to bottom, #1E90FF, #1D5FBC);
+    border-color: #1D5FBC;
+    color: whitesmoke;
+    width: 100%;
+}
+
+.secondary{
+    background: linear-gradient(to bottom, lightgrey, darkgrey);
+    border-color: darkgrey;
+    color: black;
+    width: 95%;
+    text-decoration: none;
+    text-align: center;
+}
