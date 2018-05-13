@@ -158,14 +158,11 @@ textarea{
 
 .button{
     display: block;
-
-    /*background-color: dodgerblue;*/
     border-style: solid;
     border-width: 0.2em;
     border-radius: 0.5em;
     border-color: dodgerblue;
     padding: 0.2em;
-    /*background: linear-gradient(to bottom, white 0, dodgerblue 15%, dodgerblue 85%, black 100%);*/
 
 }
 
